@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --color-primary: #3B82F6;
+  --color-secondary: #000;
+  --color-text: #374151;
+  --color-light-gray: #FFFFFF;
+  --color-dark-gray: #707070;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* max-width: 1280px;
+  margin: 0 auto; */
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-light-gray);
+  width: 100%;
+
+}
+.body {
+  max-width: 960px;
+  margin: 0 auto;
+}
+header {
+  background-color:var(--color-primary);
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+header a {
+  color: var(--color-light-gray);
+}
+header nav {
+  background-color: var(--color-light-gray);
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  color:var(--color-text) ;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.nav-link a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 400;
+}
+#logo h1 {
+  font-size: 24px;
+  color: var(--color-text);
+}
+
+section {
+  background-color: var(--color-light-gray);
+  padding:40px 0;
+  color: var(--color-text);
+  line-height: 2.6;
+}
+section h1 {
+  font-size: 56px;
+  font-weight: 500;
+  margin-bottom: 20px;  
+}
+section p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font-size: 24px;
+  max-width: 700px;
+}
+section p a {
+  color: var(--color-secondary);
+  text-decoration: underline;
+  font-weight: 400;
+  cursor: pointer;
+}
+section span {
+  color: var(--color-text);
+  font-weight: 700;
+}
+section h2 {
+  font-size: 36px;
+  font-weight: 400;
+  /* margin-bottom: 20px; */
+  color: var(--color-secondary);
+}
+section:nth-child(2) p {
+  font-size: 15px;
+  color: var(--color-secondary);
+  max-width: 100%;
+}
+section:nth-child(2) img {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
