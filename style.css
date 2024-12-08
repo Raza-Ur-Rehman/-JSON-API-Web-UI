@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --color-primary: #3B82F6;
   --color-secondary: #000;
@@ -6,6 +7,7 @@
   --color-light-gray: #FFFFFF;
   --color-dark-gray: #707070;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -13,44 +15,62 @@
   /* max-width: 1280px;
   margin: 0 auto; */
 }
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--color-light-gray);
   width: 100%;
 
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-text);
+}
+
 .body {
   max-width: 960px;
   margin: 0 auto;
+  padding: 14px;
 }
+
 header {
-  background-color:var(--color-primary);
+  background-color: var(--color-primary);
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
 }
+
 header a {
   color: var(--color-light-gray);
+  font-size: 18px;
 }
+
 header nav {
   background-color: var(--color-light-gray);
   height: 75px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
-  color:var(--color-text) ;
+  padding: 30px 15px 0;
+  color: var(--color-text);
 }
+
 .nav-list {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
 }
+
 .nav-link a {
   text-decoration: none;
   color: var(--color-text);
   font-weight: 400;
 }
+
 #logo h1 {
   font-size: 24px;
   color: var(--color-text);
@@ -58,47 +78,77 @@ header nav {
 
 section {
   background-color: var(--color-light-gray);
-  padding:40px 0;
+  padding: 40px 0;
   color: var(--color-text);
-  line-height: 2.6;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
+
 section h1 {
   font-size: 56px;
   font-weight: 500;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
 }
-section p {
+
+section:nth-child(1) p {
   margin-bottom: 30px;
   line-height: 1.6;
   font-size: 24px;
   max-width: 700px;
 }
-section p a {
+
+section a {
   color: var(--color-secondary);
   text-decoration: underline;
   font-weight: 400;
   cursor: pointer;
 }
+
 section span {
   color: var(--color-text);
   font-weight: 700;
 }
+
 section h2 {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 500;
   /* margin-bottom: 20px; */
   color: var(--color-secondary);
 }
-section:nth-child(2) p {
+
+section p {
   font-size: 15px;
-  color: var(--color-secondary);
+  color: var(--color-text);
   max-width: 100%;
+  line-height: 1.7;
+  font-weight: 400;
 }
-section:nth-child(2) img {
-  max-width: 600px;
+
+section img {
+  max-width: 500px;
   width: 100%;
   margin-bottom: 20px;
   height: auto;
   object-fit: cover;
   border-radius: 5px;
+  display: block;
+  margin-top: 20px;
+}
+
+section .api-link {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+section .api-link div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 10px;
+}
+section:nth-child(7) span a {
+  color: var(--color-text);
+  font-weight: 700;
 }
